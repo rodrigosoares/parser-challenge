@@ -5,7 +5,11 @@ require_relative 'external_service'
 ONE_MEGA_BYTE = 1_048_576.0
 MAX_SIZE = ONE_MEGA_BYTE * 5
 
-xml = File.open('feed.xml') { |file| Nokogiri::XML(file) }
+file_path = ARGV.first
+
+raise 'Missing file path' unless file_path
+
+xml = File.open(file_path) { |file| Nokogiri::XML(file) }
 items = xml.xpath('//item')
 batch = []
 byte_count = 0
