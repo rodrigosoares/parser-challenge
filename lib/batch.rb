@@ -1,13 +1,10 @@
-require_relative 'external_service'
-
 class Batch
   ONE_MEGA_BYTE = 1_048_576.0
   MAX_BYTE_SIZE = ONE_MEGA_BYTE * 5
 
-  def initialize(items = [])
-    @items = items.map(&:to_obj)
-    @byte_count = items.to_json.bytesize
-    @service = ExternalService.new
+  def initialize(service)
+    reset
+    @service = service
   end
 
   def add(item)
@@ -29,6 +26,6 @@ class Batch
 
   def reset
     @items = []
-    @byte_count = 0
+    @byte_count = @items.to_json.bytesize
   end
 end

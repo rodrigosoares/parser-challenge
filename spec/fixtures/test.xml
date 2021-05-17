@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:g="http://base.google.com/ns/1.0">
+    <channel>
+        <item>
+            <g:id>1</g:id>
+            <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+            <title>Foo</title>
+        </item>
+        <item>
+            <g:id>2</g:id>
+            <description>Phasellus non ultricies odio.</description>
+            <title>Bar</title>
+        </item>
+        <item>
+            <g:id>3</g:id>
+            <description>Ut scelerisque euismod ante, ut molestie justo vehicula ac.</description>
+            <title>Baz</title>
+        </item>
+    </channel>
+</rss>
