@@ -12,3 +12,4 @@ This Ruby program parses a XML feed file and sends the content in the form of mu
 - Run `rvm use` to set Ruby version to 2.7.x and use the gemset `parser`.
 - Run `bundle install` to install all dependencies.
 - Run `ruby main.rb [FILE_PATH]` passing the path of the XML file.
+- Run `rspec` to run test cases and describe used methods (optional).
