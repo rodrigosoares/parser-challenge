@@ -1,6 +1,6 @@
 require 'nokogiri'
-require_relative 'batch'
-require_relative 'product'
+require_relative 'lib/batch'
+require_relative 'lib/product'
 
 file_path = ARGV.first
 
